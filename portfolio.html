@@ -15,19 +15,34 @@
     </head>
 
     <body>
+        <style>
+            .header-color.mdl-layout__header {
+                background: #455A64;
+            }
+            .row-color.mdl-layout__header-row {
+                background: #455A64;
+                color: white;
+            }
+            .tab-color.mdl-layout__tab-bar {
+                background: #607d8b;
+            }
+            .tab-font.mdl-layout__tab {
+                color: white;
+            }
+        </style>
         <!-- Simple header with fixed tabs. -->
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+        <div class="mdl-layout mdl-js-layout mdl-layout__header--scroll
             mdl-layout--fixed-tabs">
-            <header class="mdl-layout__header">
-                <div class="mdl-layout__header-row">
+            <header class="header-color mdl-layout__header">
+                <div class="row-color mdl-layout__header-row">
                         <!-- Title -->
                         <span class="mdl-layout-title">Portfolio</span>
                 </div>
                 <!-- Tabs -->
-                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                    <a href="#fixed-tab-1" class="mdl-layout__tab is-active">VR</a>
-                    <a href="#fixed-tab-2" class="mdl-layout__tab">Machine Learning</a>
-                    <a href="#fixed-tab-3" class="mdl-layout__tab">3D Portfolio</a>
+                <div class="tab-color mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#fixed-tab-1" class="tab-font mdl-layout__tab is-active">VR</a>
+                    <a href="#fixed-tab-2" class="tab-font mdl-layout__tab">Machine Learning</a>
+                    <a href="#fixed-tab-3" class="tab-font mdl-layout__tab">3D Portfolio</a>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
