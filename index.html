@@ -1,303 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="theme-color" content="#455A64"/>
-        <title>Tamim Shaban</title>
-        <meta name="description" content="Tamim Shaban's portfolio'">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-red.min.css" />
-        <script src="./material.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#455A64" />
+    <title>Tamim Shaban</title>
+    <meta name="description" content="Tamim Shaban's portfolio'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-red.min.css" />
+    <script src="./material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 
-    <body>
-        <!-- Uses a transparent header that draws on top of the layout's background -->
-        <style>
-            .demo-layout-transparent {
-                background: #607d8b;
-            }
-            .demo-layout-transparent .mdl-layout__header,
-            .demo-layout-transparent .mdl-layout__drawer-button {
-                /* This background is dark, so we set text to white. Use 87% black instead if
+<body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+        .demo-layout-transparent {
+            background: #607d8b;
+        }
+        
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+            /* This background is dark, so we set text to white. Use 87% black instead if
                 your background is light. */
-                color: white;
-            }
-            .white-nav-link.mdl-navigation__link{
-                color: white;
-            }
-            .header-color.mdl-layout__header--scroll{
-                background: #455A64;
-            }
-        </style>
+            color: white;
+        }
+        
+        .white-nav-link.mdl-navigation__link {
+            color: white;
+        }
+        
+        .header-color.mdl-layout__header--scroll {
+            background: #455A64;
+        }
+    </style>
 
-        <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-            <header class="header-color mdl-layout__header mdl-layout__header--scroll">
-                <div class="mdl-layout__header-row">
-                    <!-- Title -->
-                    <span class="mdl-layout-title">Tamim Shaban</span>
-                        <!-- Add spacer, to align navigation to the right -->
-                    <div class="mdl-layout-spacer"></div>
-                    <!-- Navigation -->
-                    <nav class="mdl-navigation">
-                        <a class="white-nav-link mdl-navigation__link" href="index.html">About</a>
-                        <a class="white-nav-link mdl-navigation__link" href="portfolio.html">Portfolio</a>
-                    </nav>
-                </div>
-            </header>
-            <div class="mdl-layout__drawer">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="header-color mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
                 <span class="mdl-layout-title">Tamim Shaban</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="index.html">About</a>
-                    <a class="mdl-navigation__link" href="portfolio.html">Portfolio</a>
+                    <a class="white-nav-link mdl-navigation__link" href="index.html">About</a>
+                    <a class="white-nav-link mdl-navigation__link" href="portfolio.html">Portfolio</a>
                 </nav>
             </div>
-            <style>
-                .content-grid{
-                    max-width: 1200px;
-                    justify-content: center;
-                }
-            </style>
-            <main class="my-layout mdl-layout"> 
-                <div class="content-grid mdl-grid">
-                    <div class="about-card mdl-card mdl-shadow--4dp mdl-cells mdl-cell mdl-cell--4-col">
-                         <!-- About Card -->
-                        <style>
-                            .about-card.mdl-card {
-                                width: 340px;
-                                height: 380px; 
-                            }
-                            .about-card > .mdl-card__title {
-                                color: #fff;
-                                background:url('./assets/img/profile.jpg') center / cover;
-                            }
-                        </style>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Tamim Shaban</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index.html">About</a>
+                <a class="mdl-navigation__link" href="portfolio.html">Portfolio</a>
+            </nav>
+        </div>
+        <style>
+            .content-grid {
+                max-width: 1200px;
+                justify-content: center;
+            }
+        </style>
+        <main class="my-layout mdl-layout">
+            <div class="content-grid mdl-grid">
+                <div class="about-card mdl-card mdl-shadow--4dp mdl-cells mdl-cell mdl-cell--4-col">
+                    <!-- About Card -->
+                    <style>
+                        .about-card.mdl-card {
+                            width: 340px;
+                            height: 380px;
+                        }
                         
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">About Me</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Hi. I'm a software developer currently studying computer science at CU Boulder.
-                                I mainly work with VR and neural networks. I also do work involving computer graphics.
-                                Check out my portfolio to see a list of my VR apps or CG content.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./assets/CV.pdf">
+                        .about-card > .mdl-card__title {
+                            color: #fff;
+                            background: url('./assets/img/profile.jpg') center / cover;
+                        }
+                    </style>
+
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">About Me</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Hi. I'm a software developer currently studying computer science at CU Boulder. I mainly work with VR and neural networks.
+                        I also do work involving computer graphics. Check out my portfolio to see a list of my VR apps or
+                        CG content.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./assets/CV.pdf">
                                     Resume
                                 </a>
-                            </div>
-                        
                     </div>
-                    <div class="education-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
-                        <!-- Education Card -->
-                        <style>
-                            .education-card.mdl-card {
-                                width: 340px;
-                                height: 380px;
-                            }
-                            .education-card > .mdl-card__title {
-                                color: #fff;
-                                background: url('./assets/img/education_background.jpg') center / cover;
-                            }
-                        </style>
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">
-                                    <img src="./assets/img/ic_school_white_24dp_2x.png" height="24" width="24">
-                                    Education
-                                </h2>
-                            </div>
-                            <!-- Simple list -->
-                            <style>
-                                .demo-list-item {
-                                    width: 320px;
-                                    padding-top: 0px;
-                                    margin: 0px;
-                                    padding-bottom: 10px;
-                                }
-                                .education-list__item-primary-content.mdl-list__item-primary-content{
-                                    font-size: 16px;
-                                    padding: 0px;
-                                    margin: 0px;
-                                }
-                                .education-list__item-text-body.mdl-list__item-text-body{
-                                    font-size: 12px;
-                                    padding: 0px;
-                                    margin: 0px;
-                                }
-                                .date-list__item-text-body.mdl-list__item-text-body{
-                                    font-size: 14px;
-                                    text-align: right;
-                                    text-align-last: right;
-                                    padding: 0px;
-                                    margin: 0px;
-                                }
-                            </style>
-                            <div class="mdl-card__supporting-text">
-                                <ul class="demo-list-item mdl-list">
-                                    <li class="demo-list-item mdl-list__item mdl-list__item--two-line">
-                                        <span class="education-list__item-primary-content mdl-list__item-primary-content">
+
+                </div>
+                <div class="education-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
+                    <!-- Education Card -->
+                    <style>
+                        .education-card.mdl-card {
+                            width: 340px;
+                            height: 380px;
+                        }
+                        
+                        .education-card > .mdl-card__title {
+                            color: #fff;
+                            background: url('./assets/img/education_background.jpg') center / cover;
+                        }
+                    </style>
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">
+                            <img src="./assets/img/ic_school_white_24dp_2x.png" height="24" width="24"> Education
+                        </h2>
+                    </div>
+                    <!-- Simple list -->
+                    <style>
+                        .demo-list-item {
+                            width: 320px;
+                            padding-top: 0px;
+                            margin: 0px;
+                            padding-bottom: 10px;
+                        }
+                        
+                        .education-list__item-primary-content.mdl-list__item-primary-content {
+                            font-size: 16px;
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                        
+                        .education-list__item-text-body.mdl-list__item-text-body {
+                            font-size: 12px;
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                        
+                        .date-list__item-text-body.mdl-list__item-text-body {
+                            font-size: 14px;
+                            text-align: right;
+                            text-align-last: right;
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    </style>
+                    <div class="mdl-card__supporting-text">
+                        <ul class="demo-list-item mdl-list">
+                            <li class="demo-list-item mdl-list__item mdl-list__item--two-line">
+                                <span class="education-list__item-primary-content mdl-list__item-primary-content">
                                             University of Colorado Boulder<br>
                                             <span class="date-list__item-text-body mdl-list__item-text-body">
                                                 Aug 2013 - Present<br>
                                             </span>
-                                            <span class="education-list__item-text-body mdl-list__item-text-body">
+                                <span class="education-list__item-text-body mdl-list__item-text-body">
                                                 Computer Science (B.A.), Biochemistry (Minor)
                                             </span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <!-- Simple list -->
-                                </style>
-                                <ul class="demo-list-item mdl-list">
-                                    <li class="demo-list-item mdl-list__item mdl-list__item--two-line">
-                                        <span class="education-list__item-primary-content mdl-list__item-primary-content">
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <!-- Simple list -->
+                        </style>
+                        <ul class="demo-list-item mdl-list">
+                            <li class="demo-list-item mdl-list__item mdl-list__item--two-line">
+                                <span class="education-list__item-primary-content mdl-list__item-primary-content">
                                             Aramco College Preparatory Program<br>
                                             <span class="date-list__item-text-body mdl-list__item-text-body">
                                                 Aug 2012 - July 2013<br>
                                             </span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="work-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
-                         <!-- Work Card -->
-                        <style>
-                            .work-card.mdl-card {
-                                width: 340px;
-                                height: 180px;
-                            }
-                            .work-card > .mdl-card__title {
-                                color: #fff;
-                                background:#FF9800;
-                            }
-                        </style>
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Experience</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="portfolio.html">
+                </div>
+                <div class="work-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
+                    <!-- Work Card -->
+                    <style>
+                        .work-card.mdl-card {
+                            width: 340px;
+                            height: 180px;
+                        }
+                        
+                        .work-card > .mdl-card__title {
+                            color: #fff;
+                            background: #FF9800;
+                        }
+                    </style>
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">Experience</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="portfolio.html">
                                     Portfolio
                                 </a>
-                            </div>
                     </div>
-                    <div class="skills-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
-                        <!-- Skills Card -->
-                        <style>
+                </div>
+                <div class="skills-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
+                    <!-- Skills Card -->
+                    <style>
                         .skills-card.mdl-card {
                             width: 340px;
                             height: 300px;
                         }
+                        
                         .skills-card > .mdl-card__title {
-                        color: #fff;
-                        background:#FF9800;
+                            color: #fff;
+                            background: #FF9800;
                         }
-                        </style>
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Skills</h2>
-                            </div>
-                            <!-- Simple list -->
-                                <style>
-                                .demo-list-item {
-                                    width: 320px;
-                                    padding-top: 0px;
-                                    margin: 0px;
-                                    padding-bottom: 10px;
-                                }
-                                .skills-list__item-primary-content.mdl-list__item-primary-content{
-                                    font-size: 16px;
-                                    padding: 0px;
-                                    margin: 0px;
-                                }
-                                .skills-list__item-text-body.mdl-list__item-text-body{
-                                    font-size: 14px;
-                                    padding: 0px;
-                                    margin: 0px;
-                                }
-                                </style>
-                            <div class="mdl-card__supporting-text">
-                                <ul class="demo-list-item mdl-list">
-                                    <li class="demo-list-item mdl-list__item mdl-list__item--three-line">
-                                        <span class="skills-list__item-primary-content mdl-list__item-primary-content">
-                                            <span>Software Development<br></span>
-                                            <span class="skills-list__item-text-body mdl-list__item-text-body">
-                                                Java,<ion-tab> C++<br> C#,<ion-tab> Python<br> Unity3D,<ion-tab> Android<br>
-                                            </span> 
-                                        </span>
-                                    </li>
-                                </ul>
-                                <ul class="demo-list-item mdl-list">
-                                    <li class="demo-list-item mdl-list__item mdl-list__item--three-line">
-                                        <span class="skills-list__item-primary-content mdl-list__item-primary-content">
-                                            <span>Computer Aid Design<br></span>
-                                            <span class="skills-list__item-text-body mdl-list__item-text-body">
-                                                Blender,<ion-tab> Maya<br> Substance Painter,<ion-tab> Substance Designer<br>
-                                            </span> 
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
+                    </style>
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">Skills</h2>
                     </div>
-                    <div class="contact-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
-                         <!-- Contact Card -->
-                        <style>
-                            .contact-card.mdl-card {
-                                width: 340px;
-                                height: 300px;
-                            }
-                            .contact-card > .mdl-card__title {
-                                color: #fff;
-                                background:#FF9800;
-                            }
-                        </style>
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Contact</h2>
-                            </div>
-                            <!-- List items with avatar and action -->
-                            <style>
-                                .demo-list-action {
-                                width: 300px;
-                                }
-                            </style>
-                            <div class="demo-list-action mdl-list">
-                                <div class="mdl-list__item">
-                                    <span class="mdl-list__item-primary-content">
+                    <!-- Simple list -->
+                    <style>
+                        .demo-list-item {
+                            width: 320px;
+                            padding-top: 0px;
+                            margin: 0px;
+                            padding-bottom: 10px;
+                        }
+                        
+                        .skills-list__item-primary-content.mdl-list__item-primary-content {
+                            font-size: 16px;
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                        
+                        .skills-list__item-text-body.mdl-list__item-text-body {
+                            font-size: 14px;
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    </style>
+                    <div class="mdl-card__supporting-text">
+                        <ul class="demo-list-item mdl-list">
+                            <li class="demo-list-item mdl-list__item mdl-list__item--three-line">
+                                <span class="skills-list__item-primary-content mdl-list__item-primary-content">
+                                            <span>Software Development<br></span>
+                                <span class="skills-list__item-text-body mdl-list__item-text-body">
+                                                Java,<ion-tab> C++<br> C#,<ion-tab> Python<br> Unity3D,<ion-tab> Android<br>
+                                            </span>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="demo-list-item mdl-list">
+                            <li class="demo-list-item mdl-list__item mdl-list__item--three-line">
+                                <span class="skills-list__item-primary-content mdl-list__item-primary-content">
+                                            <span>Computer Aid Design<br></span>
+                                <span class="skills-list__item-text-body mdl-list__item-text-body">
+                                                Blender,<ion-tab> Maya<br> Substance Painter,<ion-tab> Substance Designer<br>
+                                            </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-card mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col">
+                    <!-- Contact Card -->
+                    <style>
+                        .contact-card.mdl-card {
+                            width: 340px;
+                            height: 300px;
+                        }
+                        
+                        .contact-card > .mdl-card__title {
+                            color: #fff;
+                            background: #FF9800;
+                        }
+                    </style>
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">Contact</h2>
+                    </div>
+                    <!-- List items with avatar and action -->
+                    <style>
+                        .demo-list-action {
+                            width: 300px;
+                        }
+                    </style>
+                    <div class="demo-list-action mdl-list">
+                        <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
                                         
-                                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="mailto:tamim.sha@gmail.com"  class="email obfuscated">
+                                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect email obfuscated" href="" data-email="tamim.sha gmail com">
                                             <img src="./assets/img/ic_mail_outline_black_24dp_2x.png" height="32" width="32">
                                             Email
                                         </a>
                                     </span>
-                                </div>
-                                <div class="mdl-list__item">
-                                    <span class="mdl-list__item-primary-content">
+                        </div>
+                        <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
                                         <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://www.github.com/tamimsha">
                                             <img src="./assets/img/mark-github-256.png" height="32" width="32">
                                             Github
                                         </a>
                                     </span>
-                                </div>
-                                <div class="mdl-list__item">
-                                    <span class="mdl-list__item-primary-content">
+                        </div>
+                        <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
                                         <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://www.linkedin.com/in/tamim-shaban-9b639a112">
                                             <img src="./assets/img/linkedin-logo_318-50643.jpg" height="32" width="32">
                                             Linkedin
                                         </a>
                                     </span>
-                                </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
-            </main>
-        </div>
-    </body>
+            </div>
+        </main>
+    </div>
     <script>
     // Show my email address
     (function() {
@@ -309,4 +319,6 @@
             }
         })();
     </script>
+</body>
+
 </html>
